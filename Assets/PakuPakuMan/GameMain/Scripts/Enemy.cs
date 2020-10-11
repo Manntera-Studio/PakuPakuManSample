@@ -9,7 +9,7 @@ namespace GameMain
     {
         [SerializeField] private float speed;
         [SerializeField] private List<WallCollider> wallCollider = new List<WallCollider>();
-
+        
         private Rigidbody2D _rigidbody2D;
 
         private enum FaceDir
@@ -91,6 +91,16 @@ namespace GameMain
         private void Update()
         {
             MoveFront();
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if((1 << collision.gameObject.layer) == LayerMask.GetMask("Player"))
+            {
+                SceneController sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
+                sceneController.TransitionResult(GameData.ResultKind.GameOver);
+
+            }
         }
     }
 }

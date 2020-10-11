@@ -21,7 +21,10 @@ namespace GameMain
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Dest();
+            if((1 << collision.gameObject.layer) == LayerMask.GetMask("Player"))
+            {
+                Dest();
+            }
         }
 
 
