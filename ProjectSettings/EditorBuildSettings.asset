@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PakuPakuMan/Title/Title.unity
+    guid: a242c56fefdda2f4482d160d39b03ab6
+  - enabled: 1
+    path: Assets/PakuPakuMan/GameMain/GameMain.unity
+    guid: 6dbd0734d32ff47439c109142681a889
+  - enabled: 1
+    path: Assets/PakuPakuMan/Result/Result.unity
+    guid: 758775b092464344ca54c24f413da323
   m_configObjects: {}
