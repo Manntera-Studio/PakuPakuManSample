@@ -7,14 +7,10 @@ namespace GameMain
 {
     public class SceneController : MonoBehaviour
     {
-        private void Update()
+        public void TransitionResult(GameData.ResultKind result)
         {
-        }
-
-        public void TransitionResult()
-        {
+            GameData.Result = result;
             SceneManager.LoadScene("Result");
         }
     }
-
 }

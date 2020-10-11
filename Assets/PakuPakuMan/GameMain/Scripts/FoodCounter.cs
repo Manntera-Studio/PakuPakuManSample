@@ -21,7 +21,7 @@ namespace GameMain
         {
             if(FoodCount <= 0)
             {
-                sceneController.TransitionResult();
+                sceneController.TransitionResult(GameData.ResultKind.Clear);
             }
         }
 

@@ -27,6 +27,7 @@ namespace GameMain
 
         private void Dest()
         {
+            GameData.Score += 10;
             FoodCounter foodCounter = GameObject.Find("FoodCounter").GetComponent<FoodCounter>();
             foodCounter.FoodDest();
             Destroy(gameObject);
