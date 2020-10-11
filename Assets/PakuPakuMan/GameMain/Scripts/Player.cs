@@ -56,7 +56,8 @@ namespace GameMain
                     transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
                     break;
                 case FaceDir.Right:
-                    transform.rotation = Quaternion.AngleAxis(-90, Vector3.forward);
+                    transform.rotation = Quaternion.AngleAxis(-90, Vector3.forward) *
+                                         Quaternion.AngleAxis(180, Vector3.up);
                     break;
                 case FaceDir.None:
                     break;
