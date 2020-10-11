@@ -23,7 +23,7 @@ namespace GameMain
         {
             RemainingTime -= Time.deltaTime;
             int timeScond = (int) RemainingTime;
-            text.text = timeScond.ToString();
+            text.text = "Time:"+timeScond.ToString();
             if (RemainingTime <= 0.0f)
             {
                 sceneController.TransitionResult(GameData.ResultKind.GameOver);
