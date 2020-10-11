@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1444533258163937904}
   - component: {fileID: 3511891676846897823}
   - component: {fileID: 8437539129385882755}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: kabe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
